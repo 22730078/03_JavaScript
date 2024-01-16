@@ -46,16 +46,18 @@
 
         <div class="calc">
             <div class="in">
-                <label for="deposit">
-                    잔액 :  <input type="number" id="deposit"> 원
-                </label>
+                    잔액 :  <span id="balance"></span> 원
             </div>
-            <br>
+    
             <div class="out">
-                <label for="withdrawal">
-                    출금 :  <input type="number" id="withdrawal"> 
-                </label>
+                    출금 :  <input type="number" id="amount"> 
             </div>
+
+            <div class="btn">
+                <button onclick="deposit()">입금</button><span id="resultIn"></span>
+                <button onclick="withdrawal()">출금</button><span id="resultOut"></span>
+            </div>
+
         </div>
 
     <script src="../js/06_입출금하기.js"></script>
