@@ -13,11 +13,12 @@ function createTable(){
     }
 
     for(let num=1 ; num <=9; num++){
-        let str = ""
+        let str = "<tr>"
         for(let dan=start; dan <= end; dan++){
-            str += `${dan} x ${num} = ${dan*num}`;
+            str += `<td>${dan} x ${num} = ${dan*num}</td>`;
         }
-        console.log(str);
+        str = "</tr>"
+        tbody.innerHTML += str;
     }
 
 }
