@@ -1,0 +1,29 @@
+/* 표준 이벤트 모델 */
+#test2{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background-color: palevioletred;
+  }
+
+
+
+/* 입력한 색상으로 배경색 변경하기 */
+.container3{
+    width: 200px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}  
+
+#box3{
+    height: 200px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    transition-duration: 0.5s;
+}
+
+.container3 *{
+    margin-bottom: 5px;
+}
