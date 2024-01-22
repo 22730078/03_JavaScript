@@ -134,6 +134,31 @@
         <button class="arrow">return 한 줄만 작성된 경우</button>
         <button class="arrow">return 한줄인데 object 반환하는 경우</button>
         <button class="arrow"></button>
+
+        <hr>
+
+        <h1>즉시 실행 함수</h1>
+      
+        <pre>
+          (() => {})()
+      
+          - 익명 함수를 바로 수행하는 함수
+      
+          *** 즉시 실행 함수 사용하는 이유 ***
+      
+          1) 성능(속도)적 우위를 가지기 위해서
+            -> 아주 약간 빠름
+      
+          2) 변수명 중복 문제 해결을 위해서 사용
+      
+      
+          const num1 = 100; // 전역 변수
+      
+          (() => {
+            const num1 = 200;  // 지역 변수
+            console.log(num1); // 200
+          })()
+        </pre>
     <script src="../js/15_함수.js"></script>    
     </body>
 </html>

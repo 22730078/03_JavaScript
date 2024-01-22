@@ -200,3 +200,9 @@ function printObject(otherFn){
     console.log("obj.name : ", obj.name);
     console.log("obj.age : ", obj.age);
 }
+
+/* 즉시 실행 함수 확인 */
+(()=>{
+    console.log("즉시 실행 함수 입니다.");
+    console.log("함수 모양이 좀 어렵죠?");
+  })();
